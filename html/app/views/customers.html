@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app='custRtApp'>
+    <head>
+        <title>Iterating Over Data</title>
+        <link href="../../css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body ng-controller="CustomersController">
+        <div id="content" style="margin:10px 50px;">
+            <h2>Customers filtered and formatted</h2>
+            <nav id='nav'>
+                <ul >
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='customers.html'>Customers</a></li>
+                    <li><a href='orders.html'>Orders</a></li>
+                </ul>
+            </nav>
+            Filter [name]: <input type="text" ng-model="customerFilter.name" />
+            <br /><br />
+            <table>
+                <tr>
+                    <th ng-click="doSort('name')">Name</th>
+                    <th ng-click="doSort('city')">City</th>
+                    <th ng-click="doSort('orderTotal')">Order Total</th>
+                    <th ng-click="doSort('joined')">Joined</th>
+                </tr>
+                <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+                    <td>{{ cust.name }}</td>
+                    <td>{{ cust.city }}</td>
+                    <td>{{ cust.orderTotal | currency }}</td>
+                    <td>{{ cust.joined | date }}</td>
+                </tr>
+            </table>
+            <h2>Test: 1 + 4 = {{ 1+ 4}}</h2>
+            <span>Total customers:{{customers.length}}</span>
+        </div>
+        <script src="../../js/angular.js"></script>
+        <script src="../../js/angular-route.js"></script>
+        <script src="../app.js"></script>
+        <script src="../../js/controller.js"></script>
+    </body>
+</html>

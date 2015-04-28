@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>H.O.M.E. Directory</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+    <body ng-controller="UserController">
+        <div style="margin:10px 50px;">
+            <h2 style="display:inline;">Parents Filter [name]: </h2><input type="text" ng-model="userFilter.name" />
+            <br /><br />
+            <table>
+                <tr>
+                    <th ng-click="doSort('parents')">Parents</th>
+                    <th ng-click="doSort('phone')">Phone Number</th>
+                    <th ng-click="doSort('email')">Email Address</th>
+                </tr>
+                <tr ng-repeat="user in users | filter:userFilter | orderBy:sortBy:reverse">
+                    <td>{{ user.parents }}</td>
+                    <td>{{ user.phone }}</td>
+                    <td>{{ user.email }}</td>
+                </tr>
+            </table>
+        </div>
+        <script src="./angular.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
+

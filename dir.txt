@@ -1,0 +1,88 @@
+D:\_Udemy courses\AngularJS DanWahlin
+2015-02-23  20:05             4,326 AngularJS Dan Wahlin.txt
+2015-02-16  19:39           238,543 code.zip
+2015-03-06  15:23                 0 dir.txt
+2015-02-16  19:39           552,113 module-1.pdf
+2015-02-16  21:30           234,868 module-2.pdf
+
+D:\_Udemy courses\AngularJS DanWahlin\Controllers
+2015-02-16  23:13           944,739 angular.js
+2015-02-23  22:27             1,207 index.html
+2015-02-23  22:18             1,177 index2.html
+2015-02-20  13:55             1,229 index3.html
+2015-02-20  13:02             2,124 refactored.html
+2015-02-16  23:13                98 styles.css
+2015-02-18  10:41               239 test.js
+
+D:\_Udemy courses\AngularJS DanWahlin\Controllers\app\controllers
+2015-02-23  22:27                40 app.js
+2015-02-23  22:17                47 app2.js
+2015-02-23  22:30               655 customersController.js
+2015-02-23  22:20               857 customersControllerModule.js
+2015-02-23  22:21               643 customersControllerModule2.js
+2015-02-20  13:53               635 customersControllerWithAS.js
+
+D:\_Udemy courses\AngularJS DanWahlin\DirectivesAndExpressions
+2015-02-16  23:13           944,739 angular.js
+2015-02-16  23:13               411 index.html
+
+D:\_Udemy courses\AngularJS DanWahlin\End
+2015-02-16  19:40           944,739 angular.js
+2015-02-16  19:40               268 index.html
+
+D:\_Udemy courses\AngularJS DanWahlin\html
+
+2015-02-16  23:28               807 DataRepeating.html
+2015-02-16  20:32               646 ExampleOne.html
+2015-02-16  20:12               655 index.html
+2015-02-16  23:23               990 more-directives.html
+2015-02-16  22:28               952 test-directives.html
+
+
+D:\_Udemy courses\AngularJS DanWahlin\html\js
+2015-02-16  19:54           952,661 angular.js
+
+D:\_Udemy courses\AngularJS DanWahlin\images
+2015-02-16  19:50           539,245 100 Framework overview.PNG
+2015-02-16  20:16           296,621 101 key players.PNG
+2015-02-16  20:19           257,085 103 big picture.PNG
+2015-02-16  20:20           212,817 104 modules.PNG
+2015-02-16  20:20           171,183 105 Singleton factories - Services.PNG
+2015-02-16  20:21           309,139 106 controllers.PNG
+2015-02-16  20:22           195,304 107 scope.PNG
+2015-02-16  20:22           289,402 108 Views.PNG
+2015-02-16  20:23           234,969 109 Routes.PNG
+2015-02-16  21:47           366,345 110 Module 2 overview View and Directives.PNG
+2015-02-16  21:59           177,397 111 examples of AngularJS Directives.PNG
+2015-02-18  09:05           171,551 112 filtering keys.PNG
+2015-02-18  09:34           151,527 113 filtering Summary.PNG
+2015-02-18  09:40           398,058 114 modules scope and controllers.PNG
+2015-02-18  10:15           162,631 115 patterns MVC - MVVM.PNG
+2015-02-18  10:17           161,991 116 patterns MV-star.PNG
+2015-02-18  10:20           163,487 117 Controllers.PNG
+2015-02-18  10:22           177,953 118 scope - controller.PNG
+2015-02-20  13:37           336,856 119 using Controller AS.PNG
+
+D:\_Udemy courses\AngularJS DanWahlin\IteratingOverData
+2015-02-16  23:13           944,739 angular.js
+2015-02-16  23:13               636 index.html
+2015-02-18  08:58               412 names.html
+
+D:\_Udemy courses\AngularJS DanWahlin\MoreDirectives
+2015-02-16  23:13           944,739 angular.js
+2015-02-16  23:13               824 index.html
+2015-02-16  23:13               200 styles.css
+
+D:\_Udemy courses\AngularJS DanWahlin\UsingFilters
+2015-02-16  23:13           944,739 angular.js
+2015-02-20  13:10             1,438 index.html
+2015-02-20  13:45             1,759 index2.html
+2015-02-20  13:55             1,229 index3.html
+2015-02-20  13:02             2,124 refactored.html
+2015-02-16  23:13                98 styles.css
+2015-02-18  10:41               239 test.js
+
+D:\_Udemy courses\AngularJS DanWahlin\UsingFilters\app\controllers
+2015-02-20  14:02                50 app.js
+2015-02-20  13:39               641 customersController.js
+2015-02-20  13:53               635 customersControllerWithAS.js

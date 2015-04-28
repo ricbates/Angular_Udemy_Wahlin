@@ -1,0 +1,19 @@
+<h2>Find a Parents info [user.html]</h2>
+Search [Parents name]: <input type="text" ng-model="userFilter.parents" />
+<br /><br />
+<table>
+    <tr>
+        <th ng-click="doSort('parents')">Parents Name</th>
+        <th ng-click="doSort('phone')">Phone Number</th>
+        <th ng-click="doSort('email')">Email Address</th>
+        <th>&nbsp;</th>
+    </tr>
+    <tr ng-repeat="user in users | filter:userFilter | orderBy:sortBy:reverse">
+        <td>{{ user.parents }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.email }}</td>
+        <td><a href="#/findUser/{{ user.Id }}">View Details</a></td>
+    </tr>
+</table>
+<h2>Test: 1 + 4 = {{ 1+ 4}}</h2>
+<span>Total customers:{{users.length}}</span>

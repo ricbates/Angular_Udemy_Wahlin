@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="custRtApp">
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css"></style>
+    <rel link="css/styles.css" type="text/css"></rel>
+<title>Angular Routed App</title>
+    
+</head>
+
+<body>
+    <h3>Angular Routed App</h3>
+    <nav id='nav'>
+        <ul >
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='findUser.html'>Customers</a></li>
+            <li><a href='orders.html'>Orders</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Placeholder for navigation page areas-->
+    <div ng-view></div>
+    
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="ctrl/controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>More Directive examples</title>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
+        .red {color: red;}
+        .green {color: green;}
+    </style>
+</head>
+<body ng-init="data={name:'Rick', isVisible: true, loggedIn: false, status: 'green'}">
+    <div ng-cloak>
+        <div ng-switch on="data.loggedIn">
+            <div ng-switch-when="true">
+                Welcome {{data.name}}
+            </div>
+            <div ng-switch-default ng-class="data.status">Login</div>
+        </div>
+        <br />
+        <div ng-show="data.isVisible">
+            Name: <input type="text" ng-model="data.name" /> {{data.name }}
+        </div>
+    </div>
+    <script src="js/angular.js"></script>
+</body>
+</html>

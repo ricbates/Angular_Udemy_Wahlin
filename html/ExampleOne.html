@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css">
+    #main {width:600px; height:300px; border:1px solid gray;padding:20px}
+    #output {width:600px; height:200px; border:1px solid gray;padding:20px}
+    #content {margin:40px auto; width:1024px;}
+</style>
+<title>Angular App</title>
+
+</head>
+
+<body>
+    
+<div id="content">
+<div id="main">
+<h2>Angular App</h2>
+<h3><input type="text" ng-model="fname" /></h3>
+<h3><input type="text" ng-model="lname" /></h3>
+</div>
+ <div id="output">
+<p>Hello {{fname}} {{lname}}</p>
+</div>
+</div>
+<script src="js/angular.js"></script>
+</body>
+</html>

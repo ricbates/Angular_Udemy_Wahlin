@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+</head>
+<body ng-init="name='Rick'">
+    <div ng-hide="isHidden">
+        <!-- VER 1 Name: <input type="text" ng-model="name" /> {{name}} -->
+        Name: <input type="text" ng-model="name" /> <span ng-bind="name"></span>
+    </div> 
+    <!-- with isHidden declared to the input element, Angular creates the necessary CSS behind the scenes -->
+    Hide: <input type="checkbox" ng-model="isHidden"/> 
+    <!-- ng-hife evaluates to true [hide me] if the checkbox is checked {true condition}-->
+    <br />
+    
+    <button ng-click="name='Richard'">Change Name</button>
+    <button ng-hide="true">Hidden</button><!-- This button is hidden by virtue of the ng-hide directive, set to true -->
+    <script src="js/angular.js"></script>
+</body>
+</html>

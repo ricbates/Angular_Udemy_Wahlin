@@ -1,0 +1,16 @@
+<h2>Customer {{user.Id}}</h2>
+<table>
+    <tr>
+        <th>Id #</th>
+        <th>Parents Name</th>
+        <th>Phone Number</th>
+        <th>Email Address</th>
+    </tr>
+    <tr ng-repeat="user in users">
+        <td>{{ user.Id }}</td>
+        <td>{{ user.parents }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.email }}</td>
+    </tr>
+</table>
+<span>Total customers:{{users.length}}</span>

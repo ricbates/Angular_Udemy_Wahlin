@@ -1,0 +1,157 @@
+
+AngularJS Dan Wahlin  http://weblogs.asp.net/dwahlin
+
+Views, Directives and Filters
+
+Controllers, Scopes and Modules
+
+Routing
+
+Services and Factories [re-usability]
+
+Animations
+----------------------
+
+SPA Single Page Application framework
+-------------------------------------
+Overview
+
+	Main page is a shell page [container]
+	
+	<div>  VIEW1  </div>	
+
+	fast and fluid application [like a desktop app]
+		SPA's maintain a history
+		--
+		Technologies needed to do it yourself:
+			DOM Manipulation
+			History
+			Routing
+			Ajax
+			Data Binding
+			More...
+		Angular provides all this functionality plus
+			MVC, Testing, jqLite, Templates, and Factories
+			AND
+			ViewModel, Controllers, Views, Directives, Services, Dependency Injection and Validation
+
+	Views, Directives and Filters
+		directives [component --> ng-app]
+		
+	https://docs.angularjs.org/api  FOR HELP FILES
+	
+	Data Binding
+		Knockout.js - data binding library
+		
+	*** Control-Oriented vs. Data-Oriented ***
+	
+		Control-Oriented example
+			code assigns value to textbox
+			document.getElementById('name').value = "John Doe";
+			user modifies data
+			user clicks a button
+			code pulls value out of the textbox
+			var name = document.getElementById('name').value; // capture the tb contents
+			
+		Data-Oriented
+			<input type="text" bindProperty="name" />
+			user modifies data
+			property value is automatically updated!
+			
+		---------------------------------------------
+		Directives and Expressions
+			directives teach HTML new tricks
+			directives are like building blocks [think lego]
+			
+			DOM manipulation, View loading, Data binding, CSS, Controllers/Modules, Events
+			
+			Most Directives are used like Attributes
+				<div ng-hide="isHidden">
+				<div data-ng-hide="isHidden">  // data- is better for html checkers HTML5 semantics etc
+				<ng-view></ng-view>
+				
+			<body ng-init="name='Rick'"> <!-- This auto initializes the input box to the default value 'Rick'--> 
+			 Name: <input type="text" ng-model="name" /> {{name}}
+
+	Controllers, Scopes and Modules
+	
+		Controller is the brain
+		Scope in injected into the controller
+		Acts as ViewModel
+		Views bind to scope properties and functions		
+		
+		Creating a Controller  //example
+		<script>
+			function SimpleController($scope) { // $scope is injected dynamically by AngularJS
+				$scope.customers = [ // array of object literals
+				{name:'John', city:'Chandler'}, 
+				{name:'Zed', city:'Las Vegas'},
+				{name:'Tina', city:'New York'}, 
+				{name:'Dave', city:'Seattle'}
+				];
+			}
+		</script>
+		
+		// 2 - Controller in a Module
+		
+		var demoApp = angular.module('demoApp', []);
+		
+		demoApp.controller('SimpleController', function ($scope) {
+				$scope.customers = [ 
+					{name:'John', city:'Chandler'}, 
+					{name:'Zed', city:'Las Vegas'},
+					{name:'Tina', city:'New York'}, 
+					{name:'Dave', city:'Seattle'}
+				];
+		});
+		
+		// 3 non global reference example
+		
+		var demoApp = angular.module('demoApp', []);
+			// not necessarily a global variable.
+		angular.module('demoApp').controller('SimpleController', function ($scope) {
+				$scope.customers = [ 
+					{name:'John', city:'Chandler'}, 
+					{name:'Zed', city:'Las Vegas'},
+					{name:'Tina', city:'New York'}, 
+					{name:'Dave', city:'Seattle'}
+				];
+		});
+		
+		// 4
+		var demoApp = angular.module('demoApp', []);
+		// Dan's preferred approach
+		(function() {		//anonymous function wrapper
+		var SimpleController = function ($scope) {
+				$scope.customers = [ 
+					{name:'John', city:'Chandler'}, 
+					{name:'Zed', city:'Las Vegas'},
+					{name:'Tina', city:'New York'}, 
+					{name:'Dave', city:'Seattle'}
+				];
+		};
+		angular.module('demoApp').controller('SimpleController', SimpleController, 
+			['$scope', function ($scope) {   // 1
+				$scope.customers = [...]}]); // 2 this line stops minifiers from breaking the script by renaming $scope to $s
+		}());								 // $scope is found by the angular runtime engine
+		
+		//  SimpleController.$inject = [$scope]; // then instead of lines 1 and 2 in previous example
+		//  angular.module('demoApp').controller('SimpleController', SimpleController);
+		
+	Routing
+		angular.module.config()
+		
+		ngRoute [separate angular script file]
+		
+		$routeProvider
+		
+		when loading a page --> route provider connects controller and view
+				see D:\_Udemy courses\AngularJS DanWahlin\images\123 RouteProvider.png
+				
+		
+	Services and Factories [re-usability]
+
+	Animations [CSS, BootStrap]
+	
+	
+
