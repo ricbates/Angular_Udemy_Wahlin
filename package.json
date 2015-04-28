@@ -1,0 +1,25 @@
+{
+  "name": "angular_js_udemy",
+  "version": "1.0.0",
+  "description": "Angular training by Dan Wahlin",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricbates/Angular_Udemy_Wahlin.git"
+  },
+  "keywords": [
+    "angularjs",
+    "node",
+    "git",
+    "learn"
+  ],
+  "author": "Rick Bates",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricbates/Angular_Udemy_Wahlin/issues"
+  },
+  "homepage": "https://github.com/ricbates/Angular_Udemy_Wahlin"
+}
